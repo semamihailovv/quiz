@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>жалюзи-спб.рф</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h2 class="quiz-header"> <span>Рассчитайте стоимость</span> жалюзи по актуальным ценам на <span class="js-quiz-today"></span> </h2>
+        <div class="quiz-body">
+            <form class="quiz-form" action="./mail.php" method="post" id="quiz-form">
+                <div  class="quiz-progress">
+                    <p class="quiz-progress__text">
+                        Вы отвечаете на <span class="js-quiz-progress">1</span> <span class="">вопрос</span> из 6
+                    </p>
+                    <div class="quiz-progress__bar">
+                        <div class="quiz-progress__inner"></div>
+                    </div>
+                </div>
+
+                <div class="quiz-items">
+                    <div style="" class="quiz-item">
+                        <div class="quiz-title">Какие жалюзи вам необходимы?</div>
+                        <div class="quiz-options">
+                            <div class="quiz-option">
+                                <label for="option1">
+                                    <div class="quiz-option__wrapper">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                        <div class="quiz-option__checkbox">
+                                            <input type="radio" id="option1" name="quiz1" value="Вертикальные жалюзи" class="custom-radio">
+                                            <div class="quiz-option__checkbox-label"></div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="quiz-option__text">Вертикальные жалюзи</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option2">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option2" name="quiz1" value="Горизонтальные жалюзи" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Горизонтальные жалюзи</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option3">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <img src="./img/img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option3" name="quiz1" value="Рулонные шторы" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Рулонные шторы</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option4">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option4" name="quiz1" value="Шторы Зебра (День-Ночь)" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Шторы Зебра (День-Ночь)</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option5">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <img src="./img/img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option5" name="quiz1" value="Шторы плиссе" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Шторы плиссе</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option6">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option6" name="quiz1" value="Римские шторы" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Римские шторы</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: none;" class="quiz-item">
+                        <div class="quiz-title">Степень затемнения</div>
+                        <div class="quiz-options">
+                            <div class="quiz-option">
+                                <label for="option7">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <img src="./img/img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option7" name="quiz2" value="Полупрозрачный материал" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Полупрозрачный материал</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option8">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option8" name="quiz2" value="Блэкаут (полное затемнение)" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Блэкаут (полное затемнение)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: none;" class="quiz-item">
+                        <div class="quiz-title size-title">Укажите размеры</div>
+                        <div class="dimension">
+                            <label class="size-label" for="widthRange">
+                                Ширина:
+                                <span class="size-span">
+                                    <input
+                                            type="number"
+                                            id="widthInput"
+                                            value="100"
+                                            min="25"
+                                            max="300"
+                                            step="1"
+                                            class="width-input"
+                                            aria-label="Введите ширину"
+                                    >
+                                </span>
+                                <span>см</span>
+                            </label>
+                            <input
+                                    type="range"
+                                    id="widthRange"
+                                    name="width"
+                                    min="25"
+                                    max="300"
+                                    value="100"
+                                    step="1"
+                            >
+
+                            <div class="range-labels">
+                                <span>25 см</span>
+                                <span>300 см</span>
+                            </div>
+                        </div>
+
+
+                        <div class="dimension">
+                            <label class="size-label" for="heightRange">
+                                Высота:
+                                <span class="size-span">
+                                    <input
+                                            type="number"
+                                            id="heightInput"
+                                            value="100"
+                                            min="25"
+                                            max="300"
+                                            step="1"
+                                            class="width-input"
+                                            aria-label="Введите Высоту"
+                                    >
+                                </span>
+                                <span>см</span>
+                            </label>
+                            <input
+                                    type="range"
+                                    id="heightRange"
+                                    name="height"
+                                    min="25"
+                                    max="300"
+                                    value="100"
+                                    step="1">
+                            <div class="range-labels">
+                                <span>25 см</span>
+                                <span>300 см</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: none;" class="quiz-item">
+                        <div class="quiz-title">Управление</div>
+                        <div class="quiz-options">
+                            <div class="quiz-option">
+                                <label for="option9">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <img src="./img/img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option9" name="quiz4" value="Ручное" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Ручное</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option10">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option10" name="quiz4" value="Автоматическое" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Автоматическое</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: none;" class="quiz-item">
+                        <div class="quiz-title">Нужен монтаж или установите самостоятельно?</div>
+                        <div class="quiz-options">
+                            <div class="quiz-option">
+                                <label for="option11">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <img src="./img/img.jpg" alt="">
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option11" name="quiz5" value="Нужен монтаж" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Нужен монтаж</div>
+                            </div>
+                            <div class="quiz-option">
+                                <label for="option12">
+                                <div class="quiz-option__wrapper">
+                                    <div class="quiz-option__img">
+                                        <div class="quiz-option__img">
+                                            <img src="./img/img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="quiz-option__checkbox">
+                                        <input type="radio" id="option12" name="quiz5" value="Установлю самостоятельно" class="custom-radio">
+                                        <div class="quiz-option__checkbox-label"></div>
+                                    </div>
+                                </div>
+                                </label>
+                                <div class="quiz-option__text">Установлю самостоятельно</div>
+                            </div>
+                        </div>
+                    </div>
+<!--                 last-->
+                    <div style="display: none;" class="quiz-item">
+                        <div class="quiz-title">Если есть какие-то особые примечания и пожелания напишите их в этом поле:</div>
+                        <div class="quiz-options text-area-quiz-options">
+                            <textarea class="quiz-message" name="quiz-message" id="" placeholder="Напиши текст.."></textarea>
+                        </div>
+                    </div>
+                    <!--form-->
+                    <div style="display: none;" class="quiz-item quiz-final">
+                        <h2>Отлично!</h2>
+                        <p class="quiz-final-p1">Мы уже приступили к расчёту стоимости</p>
+                        <p class="quiz-final-p2"><span>Выберите мессенджер</span>, на который мы отправим расчет стоимости и техническое решение</p>
+                        <div class="quiz-socials">
+                            <div class="quiz-social is-email">
+                                <input type="radio" id="option13" name="social" value="Перезвоните мне, у меня остались вопросы" class="custom-radio" required>
+                                <label for="option13" >
+                                    <div class="quiz-social__wrapper">
+                                        <div class="quiz-social__img">
+                                            <img class="" src="./img/email.svg" alt="#">
+                                        </div>
+                                        <div class="quiz-social__text fz16 tac">
+                                            Перезвоните <br>
+                                            мне, у меня <br>
+                                            остались вопросы
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="quiz-social is-whatsapp">
+                                <input type="radio" id="option14" name="social" value="whatsapp" class="custom-radio" required>
+                                <label for="option14">
+                                    <div class="quiz-social__wrapper">
+                                        <div class="quiz-social__img">
+                                            <img class="" src="./img/whatsapp.png" alt="#">
+                                        </div>
+                                        <div class="quiz-social__text">
+                                            Whatsapp
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="quiz-social is-telegram">
+                                <input type="radio" id="option15" name="social" value="whatsapp" class="custom-radio" required>
+                                <label for="option15">
+                                    <div class="quiz-social__wrapper">
+                                        <div class="quiz-social__img">
+                                            <img class="" src="./img/telegram.png" alt="#">
+                                        </div>
+                                        <div class="quiz-social__text ">
+                                            Telegram
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz-final-footer">
+                            <input type="tel" placeholder="Ваш телефон" name="phone" required>
+                            <button class="quiz-button" type="submit" id="quiz-button">Расчёт</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+<button></button>
+
+
+
+
+
+
+
+
+
+                <div class="quiz-bottom">
+                    <div class="quiz-click">
+                        <div class="quiz-click__img">
+                            <img class=" ls-is-cached lazyloaded" src="./img/quiz-click.png" data-src="./img/quiz-click.png" alt="#">
+                        </div>
+                        <p class="quiz-click__text">
+                            Выберите вариант ответа <br>
+                            и <span>нажмите кнопку “Далее”</span>
+                        </p>
+                    </div>
+
+                    <div class="quiz-buttons">
+                        <button type="button" class="quiz-button quiz-button-prev" id="quiz-button-prev" style="display: none;">
+                            Назад
+                        </button>
+<!--                        <div class="quiz-btn__hint" style="display:none">Ответьте на вопрос выше</div>-->
+                        <button type="button" class="quiz-button " id="quiz-button-next" disabled data-tooltip="Ответьте на вопрос">
+
+                            Далее
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="quiz-description">
+                <img src="https://xn----7sberggt9ar0k.xn--p1ai/wp-content/uploads/2024/11/bgg.png" alt="">
+                <p class="quiz-description__text"><span>Ответьте на вопросы</span>, чтобы мы могли рассчитать стоимость</p>
+            </div>
+        </div>
+        <div class="quiz-semifinal-bg" style="">
+            <img class="" src="./img/semifinal-bg.png" data-src="./img/semifinal-bg.png" alt="#">
+        </div>
+    </div>
+<script src="main.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</body>
+</html>
+
+
+
+
